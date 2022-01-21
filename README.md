@@ -6,6 +6,7 @@
 
 ## General Info
 This browser based web application to ...
+Hi my name is Jacky. I'm excited to fix conflict errors.
 	
 ## Technologies
 Technologies used for this project:
