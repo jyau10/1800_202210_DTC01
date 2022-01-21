@@ -7,12 +7,8 @@
 ## General Info
 This browser based web application to ...
 Hi my name is Jacky. I'm excited to fix conflict errors.
-<<<<<<< HEAD
-Hi my name is Malcolm. I'm excited to create conflict errors!
-=======
 Hi my name is Malcolm. I'm excited to create conflict errors.
 Hi my name is richard 
->>>>>>> b9e7194b8b92e9ca4051aa9921a25ecbb16986ed
 	
 ## Technologies
 Technologies used for this project:
