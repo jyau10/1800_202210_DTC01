@@ -8,6 +8,7 @@
 This browser based web application to ...
 Hi my name is Jacky. I'm excited to fix conflict errors.
 Hi my name is Malcolm. I'm excited to create conflict errors.
+Hi my name is richard 
 	
 ## Technologies
 Technologies used for this project:
