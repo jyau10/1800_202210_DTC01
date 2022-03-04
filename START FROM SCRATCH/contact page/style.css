@@ -120,9 +120,7 @@ header {
   background-color: var(--dark-color);
   display: grid;
 }
-.home-computer-container {
-  
-} 
+/* .home-computer-container {} */
 
 .slogan .company-title {
   background: -webkit-linear-gradient(
