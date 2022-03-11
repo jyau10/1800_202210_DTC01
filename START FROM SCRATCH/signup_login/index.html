@@ -1,29 +1,149 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expanding Cards</title>
-  <meta name="description" content="A group of cards in a row, each card narrow. When clicked, the active card expands using javascript">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <div class="panel active" style="background-image: url('images/olym.jpg')">
-      <h3>2030 Winter Olympics</h3>
-    </div>
-    <div class="panel" style="background-image: url('images/nba.jpg')">
-      <h3>NBA</h3>
-    </div>
-    <div class="panel" style="background-image: url('images/nfl.jpg')">
-      <h3>NFL</h3>
-    </div>
-    <div class="panel" style="background-image: url('images/nhl.jpg')">
-      <h3>NHL</h3>
-    </div>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expanding Cards</title>
+    <meta
+      name="description"
+      content="A group of cards in a row, each card narrow. When clicked, the active card expands using javascript"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body, html {
+          height: 100%;
+          background-color: rgb(40, 40, 40);
+      }
+      .hero-image {
+background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/starship.jpg);
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+      }
+      .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+      }
+      .separator-type, .title-type, .intro-type, .content-type .intro-type p {
+position: relative;
+}
+.intro-type .container {
+padding: 107px 0px 102px 0px !important;
+}
+.company-heading h1 {
+margin-bottom: 60px;
+padding-bottom: 50px;
+line-height: 80px;
+color: #fff;
+font-weight: 700 !important;
+text-align: center;
+}
+.jumbo {
+margin-top: 50px;
+}
+.seo-header, .product-header, 
+.intro-type .container h1.white, 
+.company-heading h1 {
+font-weight: 100 !important;
+text-transform: capitalize;
+font-size: 55px;
+margin-bottom: 20px;
+}
+.parallax {
+background-attachment: inherit !important;
+}
+.parallax {
+background-attachment: inherit !important;
+}
+.parallax {
+background-attachment: inherit !important;
+background-repeat: repeat;
+background-size: cover;
+position: absolute;
+top: 0px;
+bottom: 0px;
+width: 100%;
+z-index: -10;
+}
+.ct-btn-scroll {
+width: 49px;
+height: 49px;
+bottom: 30px;
+left: 0;
+right: 0;
+margin: auto;
+padding-top: 500px;
+z-index: 9;
+border-radius: 50%;
+-webkit-transition: background-color 0.25s ease-in-out;
+transition: background-color 0.25s ease-in-out;
+}
+img, 
+figure {
+max-width: 100%;
+}
+.h3_white{
+  color: #fff;
+  font-size: larger;
+}
+
+  </style>
+  </head>
+  <body>
+    <header>
+      <div class="company-logo">
+        <img src="../images/logo.jpg" style="width: 80px; height: 50px" />
+      </div>
+      <nav class="navbar">
+        <ul class="nav-items">
+          <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+          <li class="nav-item">
+            <a href="../contact page/index.html" class="nav-link">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="bx bx-menu"></i>
+        <i class="bx bx-x"></i>
+      </div>
+    </header>
+    <div class="hero-image">
+      <div class="hero-text">
+      <h1> WALDO </h1>
+      <h3>The best way to discover new athletes for the Olympic Games</h3>
+      </div>
   </div>
-  <script src="code.js"></script>
-</body>
+  <section id="section2">
+      <div class="body">
+        <div class="container">
+          <div
+            class="panel active"
+            style="background-image: url('images/olym.png')"
+          >
+            <h3 class="h3_white">2030 Winter Olympics</h3>
+          </div>
+          <div class="panel" style="background-image: url('images/nba.png')">
+            <h3 class="h3_white">NBA</h3>
+          </div>
+          <div class="panel" style="background-image: url('images/nfl.png')">
+            <h3 class="h3_white">NFL</h3>
+          </div>
+          <div class="panel" style="background-image: url('images/nhl.jpg')">
+            <h3 class="h3_white">NHL</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <nav id="footerPlaceholder"></nav>
+    <script src="../constants/skeleton.js"></script>
+    <script src="code.js"></script>
+    <script src="./scroll-down.js"></script>
+  </body>
 </html>

@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
-body {
+.body {
   font-family: Mulish, sans-serif;
-  display: flex;  /* to easily center the 'container' */
-  flex-direction: column;
+  display: flex; /* to easily center the 'container' */
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -17,7 +17,7 @@ body {
 
 .container {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   width: 90vw;
 }
 
@@ -50,18 +50,183 @@ body {
 }
 
 @media (max-width: 600px) {
-
   body {
     overflow-y: scroll;
   }
-  
+
   .container {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     height: 90vh;
   }
 
   .panel {
     width: 80vw;
   }
+}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ================= VARIABLE ================ */
+:root {
+  --primary-color: hsl(9, 94%, 61%);
+  --primary-color-alt: hsl(28, 72%, 83%);
+  --second-color: #3e537c;
+  --second-color-alt: hsla(220, 33%, 36%, 65%);
+  --third-color: hsl(220, 36%, 28%);
+  --white-color: #fbfbfb;
+  --white-color-alt: hsl(12, 14%, 93%);
+  --dark-color: hsl(300, 100%, 0%);
+}
+
+/* ================= BASE ==================== */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.bx {
+  font-size: 2.5rem;
+}
+.container {
+  padding: 0 2rem;
+}
+
+/* -- BODY -- */
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  background-color: var(--white-color);
+}
+
+/* ================= HEADER ================ */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  padding: 1rem 2rem;
+}
+.company-logo {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(
+    120deg,
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-items {
+  display: flex;
+}
+.nav-item {
+  margin: 0 2rem;
+}
+.nav-link {
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  position: relative;
+  background: -webkit-linear-gradient(
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-link::before {
+  content: "";
+  background: linear-gradient(var(--primary-color), var(--primary-color-alt));
+  width: 100%;
+  height: 0.05rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 150ms;
+}
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.menu-toggle {
+  display: none;
+}
+.bx-menu,
+.bx-x {
+  cursor: pointer;
+  background: -webkit-linear-gradient(
+    120deg,
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: none !important;
+}
+
+/* ================= MAIN ================ */
+
+/* -------- HOME SECTION -------------- */
+.section-1 {
+  height: 100vh;
+  background-color: var(--dark-color);
+  display: grid;
+}
+.home-computer-container {
+}
+
+.slogan .company-title {
+  background: -webkit-linear-gradient(
+    120deg,
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.slogan .company-slogan {
+  background: -webkit-linear-gradient(
+    120deg,
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+/* -------- OFFER SECTION ------------- */
+
+/* ================= MAIN ================ */
+
+/* -------- HOME SECTION -------------- */
+
+/* =============== FOOTER =============== */
+.button_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transform-style: preserve-3d;
+  transform: perspective(800px);
 }
