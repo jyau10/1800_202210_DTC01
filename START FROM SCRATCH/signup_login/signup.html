@@ -6,34 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup / Login</title>
     <link rel="stylesheet" href="./signup_stylesheet.css" />
-
-    <!------------------------------------------>
-    <!-- Bootstrap Library CSS JS CDN go here -->
-    <!------------------------------------------>
-
     <!-------------------------------------------------------->
     <!-- Firebase 8 Library related CSS, JS, JQuery go here -->
     <!-------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
   </head>
   <body>
     <div class="container right-panel-active">
       <!-- Sign Up -->
       <div class="container__form container--signup">
-        <form action="#" class="form" id="form1">
+        <form onsubmit="login(event)" class="form" id="form1">
           <h2 class="form__title">Sign Up</h2>
-          <input type="text" placeholder="User" class="input" />
-          <input type="email" placeholder="Email" class="input" />
-          <input type="password" placeholder="Password" class="input" />
+          <input type="email" placeholder="Email" class="input" id="email" />
+          <input
+            type="password"
+            placeholder="Password"
+            class="input"
+            id="password"
+          />
           <button class="btn">Sign Up</button>
         </form>
       </div>
 
       <!-- Sign In -->
       <div class="container__form container--signin">
-        <form action="#" class="form" id="form2">
+        <form onsubmit="login(event)" class="form" id="form2">
           <h2 class="form__title">Sign In</h2>
-          <input type="email" placeholder="Email" class="input" />
-          <input type="password" placeholder="Password" class="input" />
+          <input type="email" placeholder="Email" class="input" id="email" />
+          <input
+            type="password"
+            placeholder="Password"
+            class="input"
+            id="password"
+          />
           <a href="#" class="link">Forgot your password?</a>
           <button class="btn">Sign In</button>
         </form>
@@ -55,7 +63,5 @@
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
     <script src="../signup_login/signup_JS.js"></script>
-    <script src="../constants/authentication.js"></script>
-    <script src="../constants/firebaseAPI_template.js"></script>
   </body>
 </html>
