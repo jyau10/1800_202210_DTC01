@@ -1,3 +1,32 @@
+function addquiz() {
+  var quizRef = db.collection("Questions");
+  quizRef.add({
+    Question: "1. What type of sports are you into?",
+    Option1: "Individual Sports",
+    Option2: "Team Sports",
+  });
+  quizRef.add({
+    Question: "2. Which do you prefer?",
+    Option1: "Objectively scored events (example: speed skating)",
+    Option2: "Subjectively scored events (example: figure skating)",
+  });
+  quizRef.add({
+    Question: "3. Which do you prefer?",
+    Option1: "Events on Snow",
+    Option2: "Events on Ice",
+  });
+  quizRef.add({
+    Question: "4. Which do you prefer?",
+    Option1: "Long Events (example: biathlon)",
+    Option2: "Short Events (example: luge)",
+  });
+  quizRef.add({
+    Question: "5. Do you enjoy sports with extremely high jumps?",
+    Option1: "Yes",
+    Option2: "No",
+  });
+}
+
 function addathletes() {
   //define a variable for the collection you want to create in Firestore to populate data
   var athleteRef = db.collection("athletes");
