@@ -13,6 +13,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!-------------------------------------------------------->
+    <!-- Firebase 8 Library related CSS, JS, JQuery go here -->
+    <!-------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
   </head>
   <body style="text-align: center;">
     <h1>Questionnaire</h1>
@@ -32,8 +41,9 @@
   </div>
   <br><br>
   <div>
-    <a href="quiz2.html" class="btn btn-info" role="button">Next</a>
+    <a href="quiz2.html" class="btn btn-info" role="button" onclick="writeReview()">Next</a>
   </div>
+  <script src="../signup_login/firebaseAPI_template.js"></script>
   <script src="quizpage.js"></script>
   </body>
 </html>
